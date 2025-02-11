@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\balun\\OneDrive\\Desktop\\LessonsNetoBase\\homework2\\zananie1months\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{452AFBE3-FCF0-4FB8-81BA-E3D9651DE553}|zananie1months\\zananie1months.vcxproj|C:\\Users\\balun\\OneDrive\\Desktop\\LessonsNetoBase\\homework2\\zananie1months\\zananie1months\\zananie1months.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{452AFBE3-FCF0-4FB8-81BA-E3D9651DE553}|zananie1months\\zananie1months.vcxproj|solutionrelative:zananie1months\\zananie1months.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "zananie1months.cpp",
+              "DocumentMoniker": "C:\\Users\\balun\\OneDrive\\Desktop\\LessonsNetoBase\\homework2\\zananie1months\\zananie1months\\zananie1months.cpp",
+              "RelativeDocumentMoniker": "zananie1months\\zananie1months.cpp",
+              "ToolTip": "C:\\Users\\balun\\OneDrive\\Desktop\\LessonsNetoBase\\homework2\\zananie1months\\zananie1months\\zananie1months.cpp",
+              "RelativeToolTip": "zananie1months\\zananie1months.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-11T17:56:47.337Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
