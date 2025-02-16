@@ -3,11 +3,11 @@
 class Counter {
 	int value;
 public:
+	Counter() { value = 1; };
+	Counter(int userval) { value = userval; }
 	void incrementor() { value++; } 
 	void decrementor() { value--; }
 	int getvalue() const { return value; }
-	void set_default_val() { value = 1; }
-	void set_user_val(int userval) { value = userval; }
 };
 
 int main() {
@@ -16,7 +16,7 @@ int main() {
 	int startval{};
 	std::string choise{};
 	std::string command{};
-	Counter mycount1{};
+	Counter* mycounter = nullptr;
 	
 	while (true) {
 		std::cout << "Желаете ли вы установить собственное значение? Введите y или n: ";
@@ -24,12 +24,12 @@ int main() {
 		if (choise == "y" || choise == "Y") {
 			std::cout << "Введите начальное значение: ";
 			std::cin >> startval;
-			mycount1.set_user_val(startval);
+			mycounter = new Counter(startval);
 			break;
 		}
 		else if(choise == "n" || choise == "N")
 		{
-			mycount1.set_default_val();
+			mycounter = new Counter();
 			break;
 		}
 		else {
@@ -41,13 +41,13 @@ int main() {
 		std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
 		std::cin >> command;
 		if (command == "+") {
-			mycount1.incrementor();
+			mycounter->incrementor();
 		}
 		else if (command == "-") {
-			mycount1.decrementor();
+			mycounter->decrementor();
 		}
 		else if (command == "=") {
-			std::cout << "Ваше значение равно: " << mycount1.getvalue() << std::endl;
+			std::cout << "Ваше значение равно: " << mycounter->getvalue() << std::endl;
 		} 
 		else if (command == "x") {
 			std::cout << "До свидания!\n";
