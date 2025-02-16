@@ -57,6 +57,7 @@ int main() {
 		}
 		
 	}
-	
+	delete mycounter;
+
 	return 0;
 }
