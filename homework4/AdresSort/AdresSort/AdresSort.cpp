@@ -16,11 +16,11 @@ public:
 		this->flatnumber = flatnumber;
 	}
 
-	std::string get_output_address() {
+	std::string get_output_address() const {
 		return city + ", " + street + ", " + std::to_string(homenumber) + ", " + std::to_string(flatnumber);
 	}
 
-	std::string get_city() { return city; }
+	std::string get_city() const { return city; }
 };
 
 void sort(Address** addresses, int n) {
@@ -66,6 +66,10 @@ int main() {
 	std::ofstream fout("out.txt");
 	if (!fout.is_open()) {
 		std::cout << "Error!" << std::endl;
+		for (int i = 0; i < n; ++i) {
+			delete[] addresses[i];
+		}
+		delete[] addresses;
 		return 1;
 	}
 
