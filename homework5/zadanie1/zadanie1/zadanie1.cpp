@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 
 class Figure {
 private:
@@ -10,7 +11,7 @@ protected:
 		this->name = name;
 	}
 public:
-	int get_sides() {
+	int get_sides() const {
 		return numOfSides;
 	}
 	std::string get_name() {
