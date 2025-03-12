@@ -6,9 +6,11 @@
 #error MODE is not defined!
 #endif
 
+#if MODE == 1
 int add(int x, int y) {
 	return x + y;
 }
+#endif
 
 int main() {
 	setlocale(LC_ALL, "Russian");
