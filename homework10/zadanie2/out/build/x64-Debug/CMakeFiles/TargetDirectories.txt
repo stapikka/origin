@@ -1,0 +1,3 @@
+C:/Users/balun/Desktop/LessonsNetoBase/homework10/zadanie2/out/build/x64-Debug/CMakeFiles/classes_figures_programm.dir
+C:/Users/balun/Desktop/LessonsNetoBase/homework10/zadanie2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/balun/Desktop/LessonsNetoBase/homework10/zadanie2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
