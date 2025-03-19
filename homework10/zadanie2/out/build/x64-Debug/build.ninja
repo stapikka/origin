@@ -41,103 +41,103 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target classes_figures_programm
+# Object build statements for EXECUTABLE target classes_figures
 
 
 #############################################
-# Order-only phony target for classes_figures_programm
+# Order-only phony target for classes_figures
 
-build cmake_object_order_depends_target_classes_figures_programm: phony || .
+build cmake_object_order_depends_target_classes_figures: phony || .
 
-build CMakeFiles\classes_figures_programm.dir\source.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\source.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\source.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\source.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Figure.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Figure.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Figure.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Figure.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Triangle.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Triangle.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Triangle.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Triangle.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\EquilateralTriangle.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\EquilateralTriangle.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\EquilateralTriangle.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\EquilateralTriangle.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\IsoscelesTriangle.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\IsoscelesTriangle.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\IsoscelesTriangle.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\IsoscelesTriangle.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Parallelogram.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Parallelogram.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Parallelogram.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Parallelogram.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Quadrangle.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Quadrangle.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Quadrangle.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Quadrangle.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Rhombus.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Rhombus.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Rhombus.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Rhombus.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\RightTriangle.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\RightTriangle.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\RightTriangle.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\RightTriangle.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
-build CMakeFiles\classes_figures_programm.dir\Square.cpp.obj: CXX_COMPILER__classes_figures_programm_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Square.cpp || cmake_object_order_depends_target_classes_figures_programm
+build CMakeFiles\classes_figures.dir\Square.cpp.obj: CXX_COMPILER__classes_figures_unscanned_Debug C$:\Users\balun\Desktop\LessonsNetoBase\homework10\zadanie2\Square.cpp || cmake_object_order_depends_target_classes_figures
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
-  OBJECT_FILE_DIR = CMakeFiles\classes_figures_programm.dir
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_PDB = classes_figures_programm.pdb
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
+  OBJECT_FILE_DIR = CMakeFiles\classes_figures.dir
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_PDB = classes_figures.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target classes_figures_programm
+# Link build statements for EXECUTABLE target classes_figures
 
 
 #############################################
-# Link the executable classes_figures_programm.exe
+# Link the executable classes_figures.exe
 
-build classes_figures_programm.exe: CXX_EXECUTABLE_LINKER__classes_figures_programm_Debug CMakeFiles\classes_figures_programm.dir\source.cpp.obj CMakeFiles\classes_figures_programm.dir\Figure.cpp.obj CMakeFiles\classes_figures_programm.dir\Triangle.cpp.obj CMakeFiles\classes_figures_programm.dir\EquilateralTriangle.cpp.obj CMakeFiles\classes_figures_programm.dir\IsoscelesTriangle.cpp.obj CMakeFiles\classes_figures_programm.dir\Parallelogram.cpp.obj CMakeFiles\classes_figures_programm.dir\Quadrangle.cpp.obj CMakeFiles\classes_figures_programm.dir\Rhombus.cpp.obj CMakeFiles\classes_figures_programm.dir\RightTriangle.cpp.obj CMakeFiles\classes_figures_programm.dir\Square.cpp.obj
+build classes_figures.exe: CXX_EXECUTABLE_LINKER__classes_figures_Debug CMakeFiles\classes_figures.dir\source.cpp.obj CMakeFiles\classes_figures.dir\Figure.cpp.obj CMakeFiles\classes_figures.dir\Triangle.cpp.obj CMakeFiles\classes_figures.dir\EquilateralTriangle.cpp.obj CMakeFiles\classes_figures.dir\IsoscelesTriangle.cpp.obj CMakeFiles\classes_figures.dir\Parallelogram.cpp.obj CMakeFiles\classes_figures.dir\Quadrangle.cpp.obj CMakeFiles\classes_figures.dir\Rhombus.cpp.obj CMakeFiles\classes_figures.dir\RightTriangle.cpp.obj CMakeFiles\classes_figures.dir\Square.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\classes_figures_programm.dir
+  OBJECT_DIR = CMakeFiles\classes_figures.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\classes_figures_programm.dir\
-  TARGET_FILE = classes_figures_programm.exe
-  TARGET_IMPLIB = classes_figures_programm.lib
-  TARGET_PDB = classes_figures_programm.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\classes_figures.dir\
+  TARGET_FILE = classes_figures.exe
+  TARGET_IMPLIB = classes_figures.lib
+  TARGET_PDB = classes_figures.pdb
 
 
 #############################################
@@ -165,7 +165,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build classes_figures_programm: phony classes_figures_programm.exe
+build classes_figures: phony classes_figures.exe
 
 # =============================================================================
 # Folder targets.
@@ -175,7 +175,7 @@ build classes_figures_programm: phony classes_figures_programm.exe
 #############################################
 # Folder: C:/Users/balun/Desktop/LessonsNetoBase/homework10/zadanie2/out/build/x64-Debug
 
-build all: phony classes_figures_programm.exe
+build all: phony classes_figures.exe
 
 # =============================================================================
 # Built-in targets

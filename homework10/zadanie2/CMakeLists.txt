@@ -1,7 +1,30 @@
 cmake_minimum_required(VERSION 3.22.0)
+
 project(classes_figures)
-add_executable(classes_figures_programm source.cpp Figure.h Figure.cpp
-Triangle.h Triangle.cpp EquilateralTriangle.h EquilateralTriangle.cpp
-IsoscelesTriangle.h IsoscelesTriangle.cpp Parallelogram.h Parallelogram.cpp
-Quadrangle.h Quadrangle.cpp Rhombus.h Rhombus.cpp RightTriangle.h RightTriangle.cpp
-Square.h Square.cpp)
+
+set (SOURCES
+ source.cpp
+ Figure.cpp
+ Triangle.cpp
+ EquilateralTriangle.cpp
+ IsoscelesTriangle.cpp
+ Parallelogram.cpp
+ Quadrangle.cpp
+ Rhombus.cpp
+ RightTriangle.cpp
+ Square.cpp
+)
+
+set (HEADERS
+ Figure.h
+ Triangle.h
+ EquilateralTriangle.h
+ IsoscelesTriangle.h
+ Parallelogram.h
+ Quadrangle.h
+ Rhombus.h
+ RightTriangle.h
+ Square.h
+)
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
