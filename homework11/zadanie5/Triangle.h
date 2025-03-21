@@ -8,7 +8,7 @@ namespace FiguresLibrary
 		int a, b, c;	// Стороны треугольника
 		int A, B, C;	// Углы треугольника
 	public:
-		FIGURESLIBRARY_API Triangle(int a, int b, int c, int A, int B, int C);
+		Triangle(int a, int b, int c, int A, int B, int C);
 
 		void print_info() const override;
 
