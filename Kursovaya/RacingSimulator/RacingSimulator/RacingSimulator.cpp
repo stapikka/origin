@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+#include <vector>
 
 class Vehicle {
 protected:
@@ -7,10 +8,6 @@ protected:
 	double speed;
 public:
 	Vehicle(std::string n, double spd) : name (n), speed(spd) {}
-
-	bool operator==(const Vehicle& other) const {
-		return name == other.name && speed == other.speed;
-	}
 
 	virtual double getRaceTime(double distance) const = 0;
 
@@ -25,30 +22,22 @@ public:
 class GroundVehicle : public Vehicle {
 protected:
 	double timeBeforeRest;			// время движения до отдыха
-	double durationOfRest[3];	// Длительности отдыха
-	int restCount;				// Количество отдыхов
+	std::vector<double> durationOfRest;	// Длительности отдыха
 
 public:
-	GroundVehicle(std::string n, double s, double tbfr, const double durationRestArr[], int rCount)
-			: Vehicle(n, s), timeBeforeRest(tbfr), restCount(rCount) {
-		for (int i = 0; i < restCount; ++i) {
-			durationOfRest[i] = durationRestArr[i];
-		}
-	}
+	GroundVehicle(std::string n, double s, double tbfr, const std::vector<double>& durationRest)
+			: Vehicle(n, s), timeBeforeRest(tbfr), durationOfRest(durationRest) {}
 	double getRaceTime(double distance) const override {
 		double time = distance / speed;
 		int countOfRest = static_cast<int>(time / timeBeforeRest);
 		
-
 		double totalRestTime = 0;	// Общее время отдыха за всю гонку
 		for (int i = 0; i < countOfRest; ++i) {
-			if (i < restCount) {
+			if (i < durationOfRest.size()) {
 				totalRestTime += durationOfRest[i];
 			}
 			else {
-				totalRestTime += durationOfRest[restCount - 1];
-				// вот тут у меня warning Reading invalid data from 'this->durationOfRest':  the readable size is '24' bytes, but '-8' bytes may be read.
-				// прошу подсказать как его можно исправить
+				totalRestTime += durationOfRest.back();
 			}
 			
 		}
@@ -61,31 +50,22 @@ public:
 
 class Camel : public GroundVehicle {
 public:
-	Camel() : GroundVehicle("Верблюд", 10, 30, restTimes, 2) {}
-private:
-	static constexpr double restTimes[2] = { 5, 8 };
+	Camel() : GroundVehicle("Верблюд", 10, 30, {5, 8}) {}
 };
 
 class FastCamel : public GroundVehicle {
 public:
-	FastCamel() : GroundVehicle("Верблюд-быстроход", 40, 10, restTimes, 3) {}
-private:
-	static constexpr double restTimes[3] = { 5, 6.5, 8 };
+	FastCamel() : GroundVehicle("Верблюд-быстроход", 40, 10, { 5, 6.5, 8 }) {}
 };
 
 class Centaur : public GroundVehicle {
 public:
-	Centaur() : GroundVehicle("Кентавр", 15, 8, restTimes, 1) {}
-private:
-	static constexpr double restTimes[] = { 2 };
-
+	Centaur() : GroundVehicle("Кентавр", 15, 8, { 2 }) {}
 };
 
 class Boots : public GroundVehicle {
 public:
-	Boots() : GroundVehicle("Ботинки-вездеходы", 6, 60, restTimes, 2) {}
-private:
-	static constexpr double restTimes[2] = { 10, 5 };
+	Boots() : GroundVehicle("Ботинки-вездеходы", 6, 60, { 10, 5 }) {}
 };
 
 class AirVehicle : public Vehicle {
@@ -147,10 +127,9 @@ class Race {
 private:
 	double distance;
 	int raceType;						// Тип гонки (1 - назменая, 2 - воздушная, 3 - смешанная)
-	Vehicle* participants[7] = {};		// Участники гонки
-	int participantsCount;
+	std::vector<Vehicle*>participants;		// Участники гонки
 public:
-	Race(double dist, int rtype) : distance(dist), raceType(rtype), participantsCount(0) {}
+	Race(double dist, int rtype) : distance(dist), raceType(rtype) {}
 
 
 	void registerVehicle(int coiseVehicle) {
@@ -183,15 +162,17 @@ public:
 				return;
 			}
 
-		for (int i = 0; i < participantsCount; ++i) {
-			if (*participants[i] == *vehicle) {
+		for (auto p : participants) {
+			if (p->getName() == vehicle->getName()) {
 				std::cout << "Нельзя зарегистрировать одно и то же ТС дважды!\n";
+				delete vehicle;
 				return;
 			}
 		}
 
-		if (participantsCount >= 7) {
+		if (participants.size() >= 7) {
 			std::cout << "Максимальное количество учатсников достигнуто!\n";
+			delete vehicle;
 			return;
 		}
 		std::string vehicleType = vehicle->getTypeVehicle();
@@ -199,45 +180,46 @@ public:
 		if ((raceType == 1 && vehicleType == "Ground") ||
 				(raceType == 2 && vehicleType == "Air") ||
 				(raceType == 3)) {
-			participants[participantsCount++] = vehicle;
+			participants.push_back(vehicle);
 			std::cout << "ТС успешно зарегистрировано!\n";
 		}
 		else {
 			std::cout << "Попытка зарегистрировать неправильный тип транспорта!\n";
+			delete vehicle;
 		}
 
 		std::cout << "Зарегистрированные ТС: ";
-		for (int i = 0; i < participantsCount; ++i) {
-			std::cout << participants[i]->getName() << " ";
+		for (auto p : participants) {
+			std::cout << p->getName() << " ";
 		}
 		std::cout << std::endl;
 	}
 
 	void start() {
-		if (participantsCount < 2) {
+		if (participants.size() < 2) {
 			std::cout << "Должно быть зарегистрировано хотя бы 2 ТС\n";
 			return;
 		}
-		for (int i = 0; i < participantsCount; ++i) {
-			for (int j = i + 1; j < participantsCount; ++j) {
+		for (int i = 0; i < participants.size(); ++i) {
+			for (int j = i + 1; j < participants.size(); ++j) {
 				if (participants[i]->getRaceTime(distance) > participants[j]->getRaceTime(distance)) {
 					std::swap(participants[i], participants[j]);
 				}
 			}
 		}
 		std::cout << "Результаты гонки:\n";
-		for (int i = 0; i < participantsCount; ++i) {
+		for (int i = 0; i < participants.size(); ++i) {
 			std::cout << i + 1 << ". " << participants[i]->getName()
 					<< ". Время: " << participants[i]->getRaceTime(distance) 
 					<< std::endl;
 		}
 	}
 
-	int getParticipantsCount() const { return participantsCount; }
+	int getParticipantsCount() const { return participants.size(); }
 
 	~Race() {
-		for (int i = 0; i < participantsCount; ++i) {
-			delete participants[i];
+		for (auto p : participants) {
+			delete p;
 		}
 	}
 };
